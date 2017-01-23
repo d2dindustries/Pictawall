@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Pictawall</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="social_header">Photo Source Connect</string>
+    <string name="social_pixabay">Pixabay</string>
+    <string name="social_dribbble">Dribbble</string>
+    <string name="social_smugmug">Smugmug</string>
+    <string name="social_flickr">Flickr</string>
+    <string name="social_facebook">Facebook</string>
+    <string name="social_instagram">Instagram</string>
+</resources>

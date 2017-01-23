@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main App Colors-->
+    <color name="colorPrimary">#f53044</color>
+    <color name="colorPrimaryDark">#c41627</color>
+    <color name="colorAccent">#f8b948</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGray">#333333</color>
+
+    <!--Photo Source API Colors-->
+    <color name="socialColorPixabay">#313131</color>
+    <color name="socialColorFlickr">#f0f0f0</color>
+    <color name="socialColorDribbble">#e86091</color>
+    <color name="socialColorFacebook">#3b5998</color>
+    <color name="socialColorSmugmug">#98c932</color>
+    <color name="socialColorInstagram">#344968</color>
+</resources>
