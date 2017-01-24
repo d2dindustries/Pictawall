@@ -3,21 +3,17 @@ package com.d2dindustries.pictawall.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.d2dindustries.pictawall.R;
-
 /**
+ * Deals with managing and handling all saved data.
  * Created by l1ttl_000 on 1/21/2017.
  */
-
 public class SharedPreferenceManager {
     private SharedPreferences prefs;
     private SharedPreferences.Editor editor;
 
-    private static final int PREF_SOCIAL_GENERIC_SOURCE = 0;
-    private static final String PREF_NAME = "pictawall-prefs";
-    private static final String PREF_SHOW_WELCOME_SCREEN = "showWelcomeScreen";
-    private static final String PREF_TOOLBAR_NETWORK = "Basic Source";
-    private static final int PREF_TOOLBAR_COLOR = R.color.colorPrimary;
+    private final int PREF_SOCIAL_GENERIC_SOURCE = 0;
+    private final String PREF_NAME = "pictawall-prefs";
+    private final String PREF_SHOW_WELCOME_SCREEN = "showWelcomeScreen";
 
     public SharedPreferenceManager(Context contextVal) {
         int PRIVATE_MODE = 0;
@@ -31,7 +27,7 @@ public class SharedPreferenceManager {
     }
 
     public boolean getShowWelcomeScreen() {
-        return prefs.getBoolean(PREF_SHOW_WELCOME_SCREEN, true);
+        return prefs.getBoolean(PREF_SHOW_WELCOME_SCREEN, false);
     }
 
     public void setChosenSourceId(int sourceID) {
@@ -42,23 +38,4 @@ public class SharedPreferenceManager {
     public int getChosenSourceId() {
         return prefs.getInt(""+PREF_SOCIAL_GENERIC_SOURCE, 0);
     }
-
-    public void setToolbarNetwork(String networkVal) {
-        editor.putString(PREF_TOOLBAR_NETWORK, networkVal);
-        editor.apply();
-    }
-
-    public String getToolbarNetwork() {
-        return prefs.getString(PREF_TOOLBAR_NETWORK, "Basic Source");
-    }
-
-    public void setToolbarColor(int networkVal) {
-        editor.putInt(""+PREF_TOOLBAR_COLOR, networkVal);
-        editor.apply();
-    }
-
-    public int getToolbarColor() {
-        return prefs.getInt(""+PREF_TOOLBAR_COLOR, R.color.colorPrimary);
-    }
-
 }

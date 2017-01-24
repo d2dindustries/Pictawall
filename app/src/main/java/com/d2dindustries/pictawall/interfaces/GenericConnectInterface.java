@@ -11,9 +11,18 @@ import retrofit2.http.Url;
  * Created by l1ttl_000 on 1/22/2017.
  */
 public interface GenericConnectInterface {
-//    @GET
-//    void getStreams(Callback<List<BasicPhotoSource>> mCallback);
 
     @GET
     Call<ResponseBody> getStreams(@Url String getURL);
+
+    //TODO: Allow for queries to search for specific images on Pixabay
+//    @GET(SharedPhotoSourceStrings.SOCIAL_PIXABAY_GET)
+//    void searchPixabay(@Query("username") String username,
+//                       @Query("key") String key,
+//                       @Query("image_type") String imageType,
+//                       @Query("q") String query,
+//                       @Query("page") int page,
+//                       @Query("per_page") int perPage,
+//                       Callback<PixabayPhotoWrapper> callback);
+
 }

@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide;
 import com.d2dindustries.pictawall.R;
 
 /**
+ * Manages populating the Welcome Screen.
  * Created by l1ttl_000 on 1/21/2017.
  */
 public class WelcomeAdapter extends PagerAdapter {
@@ -46,7 +47,7 @@ public class WelcomeAdapter extends PagerAdapter {
         ImageView welcomeIcon = (ImageView) v.findViewById(R.id.iconImageView);
         Context context = welcomeBackImage.getContext().getApplicationContext();
 
-        Glide.with(context).load(backgrounds[position]).into(welcomeBackImage);
+        Glide.with(context).load(backgrounds[position]).animate(R.anim.fade_in).into(welcomeBackImage);
         welcomeText.setText(slideStrings[position]);
         Glide.with(context).load(icons[position]).into(welcomeIcon);
 

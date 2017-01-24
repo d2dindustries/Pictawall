@@ -25,7 +25,7 @@
         app:srcCompat="@drawable/green_checkmark"/>
 
     <ImageButton
-        android:id="@+id/buttonDribble"
+        android:id="@+id/buttonDribbble"
         android:text="@string/social_instagram"
         android:background="@mipmap/dribble_logo"
         android:textColor="@color/colorWhite"
@@ -51,32 +51,33 @@
         android:layout_centerHorizontal="true" />
 
     <ImageButton
-        android:text="@string/social_facebook"
-        android:id="@+id/buttonInstagram"
-        android:background="@mipmap/instagram_logo"
+        android:id="@+id/buttonSmugmug"
+        android:text="@string/social_instagram"
+        android:background="@mipmap/smugmug_logo"
         android:textColor="@color/colorWhite"
         android:textStyle="normal|bold"
-        android:paddingLeft="@dimen/welcome_button_margin"
-        android:paddingRight="@dimen/welcome_button_margin"
-        android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_width="70dp"
+        android:layout_marginBottom="21dp"
         android:contentDescription=""
-        android:layout_alignTop="@+id/buttonSmugmug"
-        android:layout_alignEnd="@+id/textView" />
+        android:layout_above="@+id/fabClose"
+        android:layout_alignStart="@+id/buttonDribbble" />
 
     <ImageButton
-        android:id="@+id/buttonFacebook"
-        android:text="@string/social_facebook"
-        android:background="@mipmap/facebook_logo"
+        android:id="@+id/buttonPixabay"
+        android:text="@string/social_pixabay"
+        android:background="@mipmap/pixabay_logo"
         android:textColor="@color/colorWhite"
         android:textStyle="normal|bold"
         android:paddingLeft="@dimen/welcome_button_margin"
         android:paddingRight="@dimen/welcome_button_margin"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
         android:contentDescription=""
-        android:layout_alignTop="@+id/buttonDribble"
-        android:layout_alignStart="@+id/buttonInstagram" />
+        android:layout_height="70dp"
+        android:layout_width="70dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp" />
 
     <ImageButton
         android:id="@+id/buttonFlickr"
@@ -90,33 +91,70 @@
         android:layout_height="70dp"
         android:contentDescription=""
         android:layout_alignTop="@+id/buttonPixabay"
-        android:layout_alignStart="@+id/buttonFacebook" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27dp" />
 
     <ImageButton
-        android:id="@+id/buttonSmugmug"
-        android:text="@string/social_instagram"
-        android:background="@mipmap/smugmug_logo"
-        android:textColor="@color/colorWhite"
-        android:textStyle="normal|bold"
-        android:layout_height="70dp"
-        android:layout_width="70dp"
-        android:layout_marginBottom="21dp"
-        android:contentDescription=""
-        android:layout_above="@+id/fabClose"
-        android:layout_alignStart="@+id/buttonDribble" />
-
-    <ImageButton
-        android:id="@+id/buttonPixabay"
-        android:text="@string/social_pixabay"
-        android:background="@mipmap/pixabay_logo"
+        android:id="@+id/buttonFacebook"
+        android:text="@string/social_facebook"
+        android:background="@mipmap/facebook_logo"
         android:textColor="@color/colorWhite"
         android:textStyle="normal|bold"
         android:paddingLeft="@dimen/welcome_button_margin"
         android:paddingRight="@dimen/welcome_button_margin"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:contentDescription=""
+        android:layout_alignTop="@+id/buttonDribbble"
+        android:layout_alignStart="@+id/buttonFlickr" />
+
+    <ImageButton
+        android:text="@string/social_facebook"
+        android:id="@+id/buttonInstagram"
+        android:background="@mipmap/instagram_logo"
+        android:textColor="@color/colorWhite"
+        android:textStyle="normal|bold"
+        android:paddingLeft="@dimen/welcome_button_margin"
+        android:paddingRight="@dimen/welcome_button_margin"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription=""
+        android:layout_alignTop="@+id/buttonSmugmug"
+        android:layout_alignStart="@+id/buttonFacebook" />
+
+    <ImageButton
+        android:id="@+id/buttonJSON"
+        android:text="@string/social_instagram"
+        android:background="@mipmap/json_logo"
+        android:textColor="@color/colorWhite"
+        android:textStyle="normal|bold"
         android:layout_height="70dp"
         android:layout_width="70dp"
-        android:layout_marginBottom="41dp"
-        android:layout_above="@+id/buttonDribble"
-        android:layout_alignStart="@+id/textView" />
+        android:contentDescription=""
+        android:layout_alignTop="@+id/buttonPixabay"
+        android:layout_alignStart="@+id/buttonGithub" />
+
+    <ImageButton
+        android:id="@+id/buttonGithub"
+        android:text="@string/social_instagram"
+        android:background="@mipmap/github_logo"
+        android:textColor="@color/colorWhite"
+        android:textStyle="normal|bold"
+        android:layout_height="70dp"
+        android:layout_width="70dp"
+        android:contentDescription=""
+        android:layout_alignTop="@+id/buttonDribbble"
+        android:layout_alignStart="@+id/buttonGoogle" />
+
+    <ImageButton
+        android:id="@+id/buttonGoogle"
+        android:text="@string/social_instagram"
+        android:background="@mipmap/google_logo"
+        android:textColor="@color/colorWhite"
+        android:textStyle="normal|bold"
+        android:layout_height="70dp"
+        android:layout_width="70dp"
+        android:contentDescription=""
+        android:layout_alignTop="@+id/buttonSmugmug"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

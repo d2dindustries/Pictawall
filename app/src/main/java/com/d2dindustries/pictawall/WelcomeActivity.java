@@ -12,6 +12,10 @@ import android.widget.ImageView;
 import com.d2dindustries.pictawall.adapters.WelcomeAdapter;
 import com.d2dindustries.pictawall.animations.WelcomeSlideTransformer;
 
+/**
+ * Handles the Welcome Slide Screen.
+ * Created by l1ttl_000 on 1/21/2017.
+ */
 public class WelcomeActivity extends AppCompatActivity {
     ViewPager viewPager;
     TabLayout tabLayout;

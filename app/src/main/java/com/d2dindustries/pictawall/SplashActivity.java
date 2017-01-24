@@ -5,24 +5,26 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.d2dindustries.pictawall.utils.SharedPreferenceManager;
+
 /**
- * This class handles the Splash Screen
+ * Handles a simple Splash Screen.
  * Created by l1ttl_000 on 1/21/2017.
  */
 public class SplashActivity extends AppCompatActivity {
-    SharedPreferences prefs = null;
+    SharedPreferenceManager sharedPrefs;
     Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        prefs = getSharedPreferences("com.d2dindustries.Pictawall", MODE_PRIVATE);
+        sharedPrefs = new SharedPreferenceManager(this);
         intent = new Intent(this, WelcomeActivity.class);
 
-        if (prefs.getBoolean("showWelcome", false)) {
-            //Shows Gallery if the user has connected to photos already
+        if (sharedPrefs.getShowWelcomeScreen()) {
+            //Shows Gallery if the user has seen welcome screen already
             intent = new Intent(this, MainActivity.class);
-            //prefs.edit().putBoolean("showWelcome", false).apply();
+            //sharedPrefs.setShowWelcomeScreen(true);
         }
         startActivity(intent);
         finish();

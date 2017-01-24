@@ -3,6 +3,7 @@ package com.d2dindustries.pictawall.models;
 import java.util.List;
 
 /**
+ * Model for Pixabay API Wrapper Array.
  * Created by l1ttl_000 on 1/22/2017.
  */
 public class PixabayPhotoWrapper{

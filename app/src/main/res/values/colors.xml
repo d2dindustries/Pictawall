@@ -8,10 +8,13 @@
     <color name="colorGray">#333333</color>
 
     <!--Photo Source API Colors-->
-    <color name="socialColorPixabay">#313131</color>
-    <color name="socialColorFlickr">#f0f0f0</color>
-    <color name="socialColorDribbble">#e86091</color>
-    <color name="socialColorFacebook">#3b5998</color>
-    <color name="socialColorSmugmug">#98c932</color>
-    <color name="socialColorInstagram">#344968</color>
+    <color name="colorPixabay">#313131</color>
+    <color name="colorJSON">#1a549a</color>
+    <color name="colorFlickr">#025fdf</color>
+    <color name="colorDribbble">#e86091</color>
+    <color name="colorGithub">#201f1f</color>
+    <color name="colorFacebook">#3b5998</color>
+    <color name="colorSmugmug">#98c932</color>
+    <color name="colorGoogle">#f54730</color>
+    <color name="colorInstagram">#344968</color>
 </resources>

@@ -1,11 +1,10 @@
 package com.d2dindustries.pictawall;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -23,21 +22,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, GalleryGridFragment.getInstance()).commit();
+        SharedPreferenceManager sharedPreferences = new SharedPreferenceManager(this);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-        //Loads saved choice of photo data source
-        SharedPreferenceManager s = new SharedPreferenceManager(this);
-        String loadTitle = s.getToolbarNetwork();
-//        int loadColor = s.getToolbarColor();
-//        int socialId = s.getChosenSourceId();
-//        SharedPhotoSourceStrings.SOCIAL_GENERIC_SOURCE = socialId;
-//        SharedPhotoSourceStrings.SOCIAL_GENERIC_BASE = SOCIAL_ARRAY_BASE[socialId];
-//        SharedPhotoSourceStrings.SOCIAL_GENERIC_GET = SOCIAL_ARRAY_GET[socialId];
-
-//        ColorDrawable colorDrawable = new ColorDrawable(loadColor);
-//        toolbar.setBackgroundDrawable(colorDrawable);
-        toolbar.setTitle(loadTitle);
-
+        //Load correct toolbar colors/title
+        int sId = sharedPreferences.getChosenSourceId();
+        ColorDrawable colorDrawable = new ColorDrawable(ResourcesCompat.getColor(getResources(), SharedPhotoSourceStrings.SOCIAL_ARRAY_COLOR[sId], null));
+        toolbar.setTitle(SharedPhotoSourceStrings.SOCIAL_ARRAY_NETWORK[sId]);
+        toolbar.setBackgroundDrawable(colorDrawable);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);

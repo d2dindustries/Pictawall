@@ -11,27 +11,15 @@ public class GenericPhotoSource implements GenericPhotoInterface {
     private String thumbnail;
     private String image;
     private String network;//Which photo source it's from
+    private String date;
+    private String location;
 
-    public GenericPhotoSource(){
-
-    }
-
-    public GenericPhotoSource(String thumbnail, String image, String network){
+    public GenericPhotoSource(String thumbnail, String image, String network, String date, String location){
         this.thumbnail = thumbnail;
         this.image = image;
         this.network = network;
-    }
-
-    public String getThumbnail(){
-        return thumbnail;
-    }
-
-    public String getImage(){
-        return image;
-    }
-
-    public String getNetwork(){
-        return network;
+        this.date = date;
+        this.location = location;
     }
 
     public void setThumbnail(String thumbnail){
@@ -46,4 +34,31 @@ public class GenericPhotoSource implements GenericPhotoInterface {
         this.network = network;
     }
 
+    public void setDate(String date){
+        this.date = date;
+    }
+
+    public void setLocation(String location){
+        this.location = location;
+    }
+
+    public String getThumbnail(){
+        return thumbnail;
+    }
+
+    public String getImage(){
+        return image;
+    }
+
+    public String getNetwork(){
+        return network;
+    }
+
+    public String getDate(){
+        return date;
+    }
+
+    public String getLocation(){
+        return location;
+    }
 }

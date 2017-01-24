@@ -5,9 +5,12 @@
 
     <string name="social_header">Photo Source Connect</string>
     <string name="social_pixabay">Pixabay</string>
-    <string name="social_dribbble">Dribbble</string>
-    <string name="social_smugmug">Smugmug</string>
+    <string name="social_json">Basic JSON</string>
     <string name="social_flickr">Flickr</string>
+    <string name="social_dribbble">Dribbble</string>
+    <string name="social_github">GitHub</string>
     <string name="social_facebook">Facebook</string>
+    <string name="social_smugmug">Smugmug</string>
+    <string name="social_google">Google Photos</string>
     <string name="social_instagram">Instagram</string>
 </resources>

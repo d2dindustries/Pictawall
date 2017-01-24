@@ -1,12 +1,14 @@
 package com.d2dindustries.pictawall.models;
 
 import com.d2dindustries.pictawall.interfaces.GenericPhotoInterface;
+import com.d2dindustries.pictawall.utils.SharedPhotoSourceStrings;
 
 /**
- * Model for Pixabay API Photo Source
+ * Model for Pixabay API Photo Source.
  * Created by l1ttl_000 on 1/22/2017.
  */
 public class PixabayPhotoSource implements GenericPhotoInterface {
+    private final int SOURCE_ID = 0;
     private int previewHeight;
     private int likes;
     private int favorites;
@@ -149,18 +151,23 @@ public class PixabayPhotoSource implements GenericPhotoInterface {
         this.imageHeight = input;
     }
 
-    @Override
     public String getThumbnail() {
         return previewURL;
     }
 
-    @Override
     public String getImage() {
-        return previewURL;
+        return webformatURL;
     }
 
-    @Override
     public String getNetwork() {
-        return "Pixabay";
+        return SharedPhotoSourceStrings.SOCIAL_ARRAY_NETWORK[SOURCE_ID];
+    }
+
+    public String getDate() {
+        return "N/A";
+    }
+
+    public String getLocation() {
+        return tags;
     }
 }
