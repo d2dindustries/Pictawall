@@ -22,7 +22,7 @@ Another requirement was that selecting a photo would trigger a detail view. This
 
 ### Functionality
 
-The project current functions for both the Pixabay API, as well as a generic form of JSON data. In order to add any addition API support, you would just need to include the appropriate Photo Source Data Model/Wrapper under the models folder, and then integrate it into GalleryGridFragment.java.
+The project currently functions for both the Pixabay API and a generic form of JSON data. In order to add any additional API support, you would need to include the appropriate Photo Source Data Model + Wrapper under the models folder, and then integrate it into GalleryGridFragment.java to make the apprporiate API calls.
 
 ***
 
