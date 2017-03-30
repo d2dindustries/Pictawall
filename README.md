@@ -1,6 +1,6 @@
-Solarized dark                    |  Solarized Ocean
+Initial Page                      |  Gallery Photo Grid
 :--------------------------------:|:--------------------------------:
-![](https://www.dropbox.com/s/e8o6hqi56875gai/Screenshot_2017-01-23-10-25-26.png?raw=1)  |  ![](https://www.dropbox.com/s/87dvvhtwsrd9stp/Screenshot_2017-01-23-10-25-40.png?raw=1)
+![](https://www.dropbox.com/s/e8o6hqi56875gai/Screenshot_2017-01-23-10-25-26.png?raw=1)  |  ![](https://www.dropbox.com/s/t8gl64d454odl6g/Screenshot_2017-01-23-10-25-52.png?raw=1)
 
 
 This is an Android Excercise that, as a challenge to myself, took me 2 days to complete. The requirements were to build a mobile app that allows users to view a
