@@ -9,7 +9,7 @@ import com.d2dindustries.pictawall.R;
 public class SharedPhotoSourceStrings {
     //Define Photo Source Base URLs and their respective GET requests
     private static final String SOCIAL_PIXABAY_BASE = "https://pixabay.com/";
-    private static final String SOCIAL_PIXABAY_GET = "api/?key=4330854-a347f45f3a5eeb8e9f9024c78&q=dawn&per_page=100&image_type=photo&pretty=true";
+    private static final String SOCIAL_PIXABAY_GET = "";
     private static final String SOCIAL_JSON_BASE = "https://gist.githubusercontent.com/PaulTR/dabbbd590c791a33f6e9/raw/deaf9ebbd69dedf5253ad02b09565138260fbe69/";
     private static final String SOCIAL_JSON_GET = "gallery.json";
     private static final String SOCIAL_FLICKR_BASE = "";
